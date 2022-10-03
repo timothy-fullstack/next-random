@@ -1,0 +1,138 @@
+.wrapper {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    grid-template-columns: 1fr 30%;
+    padding-block: 88px;
+    gap: 48px;
+}
+
+.wrapper h1 {
+    position: absolute;
+    top: -60px;
+    left: -20px;
+    font-size: 150px;
+    z-index: -1;
+    color: #FFF;
+}
+
+.tile {
+    position: relative;
+    width: 30%;
+    padding: 24px;
+    box-shadow: 1px 9px 26px 3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 9px 26px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 9px 26px 3px rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #131b23;
+    color: #FFF;
+}
+
+.tiledaily {
+    position: relative;
+    width: 60%;
+    padding: 24px;
+    box-shadow: 1px 9px 26px 3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 9px 26px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 9px 26px 3px rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #131b23;
+    color: #FFF;
+}
+
+.crown {
+    position: absolute;
+    bottom: -28px;
+    right: -28px;
+    width: 30%;
+}
+
+.tile ol {
+    padding: 0;
+    margin-left: 24px;
+}
+
+.tile li {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    position: relative;
+    isolation: isolate;
+}
+
+.tile li > img {
+    width: 10%;
+}
+
+.tile li > span {
+    width: 30%;
+}
+
+.tile li::marker {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tile li:first-child::before {
+    content: '';
+    position: absolute;
+    left: -48px;
+    width: 20%;
+    height: 100%;
+    background: gold;
+    z-index: -1;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.tile li:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    left: -48px;
+    width: 20%;
+    height: 100%;
+    background: silver;
+    z-index: -1;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.tile li:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    left: -48px;
+    width: 20%;
+    height: 100%;
+    background: #CD7F32;
+    z-index: -1;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.table {
+    margin-top: 8px;
+}
+
+.table tbody > tr {
+    height: 45px;
+    display: flex;
+    gap: 24px;
+}
+
+.winners {
+    margin-top: 12px;
+}
+
+.winner {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.winner img {
+    width: 7%;
+}
