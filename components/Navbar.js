@@ -15,7 +15,7 @@ const Navbar = () => {
                     <Link href='/leaderboards'>Leaderboards</Link>
                 </div>
             </div>
-            <img src="/mario.gif" alt=""/>
+            <Link href='/games'> </Link>
         </nav>
     );
 }

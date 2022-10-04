@@ -15,9 +15,94 @@ const Leaderboards = () => {
                         <h2>Daily Winners</h2>
                         <div className={ leaderboards.winners }>
                             <div className={ leaderboards.winner }>
-                                <img src="/hoop.png" alt="" />
-                                <h3>September 20, 2022</h3>
+                                <div>
+                                    <img src="/hoop.png" alt="" />
+                                </div>
+                                <span>
+                                    <p>September 20, 2022</p>
+                                    <h3>Pop up</h3>
+                                </span>
                                 <h3>Crisbern</h3>
+                            </div>
+                            <div className={ leaderboards.winner }>
+                                <div>
+                                    <img src="/punch.png" alt="" />
+                                </div>
+                                <span>
+                                    <p>September 21, 2022</p>
+                                    <h3>Punch Box</h3>
+                                </span>
+                                <h3>Adi</h3>
+                            </div>
+                            <div className={ leaderboards.winner }>
+                                <div>
+                                    <img src="/lock.png" alt="" />
+                                </div>
+                                <span>
+                                    <p>September 22, 2022</p>
+                                    <h3>Lock Master</h3>
+                                </span>
+                                <h3>Crisbern</h3>
+                            </div>
+                            <div className={ leaderboards.winner }>
+                                <div>
+                                    <img src="/world.png" alt="" />
+                                </div>
+                                <span>
+                                    <p>September 23, 2022</p>
+                                    <h3>World Jump</h3>
+                                </span>
+                                <h3>Jeremicah</h3>
+                            </div>
+                            <div className={ leaderboards.winner }>
+                                <div>
+                                    <img src="/knife.png" alt="" />
+                                </div>
+                                <span>
+                                    <p>September 27, 2022</p>
+                                    <h3>Knife Dart</h3>
+                                </span>
+                                <h3>Ef</h3>
+                            </div>
+                            <div className={ leaderboards.winner }>
+                                <div>
+                                    <img src="/snowboard.png" alt="" />
+                                </div>
+                                <span>
+                                    <p>September 28, 2022</p>
+                                    <h3>Snowboard Hero</h3>
+                                </span>
+                                <h3>Jov</h3>
+                            </div>
+                            <div className={ leaderboards.winner }>
+                                <div>
+                                    <img src="/rocket.png" alt="" />
+                                </div>
+                                <span>
+                                    <p>September 29, 2022</p>
+                                    <h3>Spore Hunter</h3>
+                                </span>
+                                <h3>Crisbern</h3>
+                            </div>
+                            <div className={ leaderboards.winner }>
+                                <div>
+                                    <img src="/bat.png" alt="" />
+                                </div>
+                                <span>
+                                    <p>September 30, 2022</p>
+                                    <h3>Pro Cricket Champion</h3>
+                                </span>
+                                <h3>Crisbern</h3>
+                            </div>
+                            <div className={ leaderboards.winner }>
+                                <div>
+                                    <img src="/punch.png" alt="" />
+                                </div>
+                                <span>
+                                    <p>October 3, 2022</p>
+                                    <h3>Punch Box</h3>
+                                </span>
+                                <h3>Adi</h3>
                             </div>
                         </div>
                     </div>
@@ -27,12 +112,12 @@ const Leaderboards = () => {
                             <li>
                                 <img src="/user.png" alt="" />
                                 <span>Crisbern</span>
-                                <strong>3</strong>
+                                <strong>4</strong>
                             </li>
                             <li>
                                 <img src="/user.png" alt="" />
                                 <span>Adi</span>
-                                <strong>1</strong>
+                                <strong>2</strong>
                             </li>
                             <li>
                                 <img src="/user.png" alt="" />

@@ -6,9 +6,11 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   const [jokes, setJokes] = useState('');
   const [isPending, setIsPending] = useState(true);
+  const [outAnimation, setOutAnimation] = useState(false);
   const [error, setError] = useState('');
 
   const getJokes = () => {
+    setOutAnimation(false);
     fetch('https://v2.jokeapi.dev/joke/any?type=single')
         .then(res => {
             if (!res.ok) {
@@ -20,12 +22,19 @@ export default function Home() {
             setJokes(data);
             setIsPending(false);
             setError(null);
+            
         })
         .catch(err => {
             setIsPending(false);
             setError(err.message);
         });
+        
   };
+
+  const removeJoke = () => {
+    setJokes('');
+    setOutAnimation(true);
+  }
 
   return (
     <>
@@ -45,7 +54,7 @@ export default function Home() {
           <div>
             { jokes == '' && <button onClick={ getJokes }>Up for a Joke?</button>}
           </div>
-          <div className={ styles.advice + ` ${ jokes ? styles.bounce : "" }` } onClick={() => { setJokes('') }}><strong>{ jokes.joke }</strong> <img src="laugh.png" alt="" srcset="" /></div>
+          <div className={ styles.advice + ` ${ jokes ? styles.bounce : styles.idle } ${ outAnimation ? styles.out : '' }` } onClick={ removeJoke }><strong>{ jokes.joke }</strong> <img src="laugh.png" alt="" srcset="" /></div>
         </div>
       </section>
     </>

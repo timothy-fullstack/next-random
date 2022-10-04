@@ -156,11 +156,22 @@ nav img {
   bottom: 0;
   left: 0;
   width: 70px;
-  animation: run 10s infinite;
 }
 
 .jump {
   transform: translateY(10px);
+}
+
+nav > a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  background-image: url('/mario.gif');
+  background-size: cover;
+  z-index: 999;
+  animation: run 10s infinite;
 }
 
 @keyframes run {

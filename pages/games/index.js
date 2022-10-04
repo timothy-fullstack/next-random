@@ -8,6 +8,7 @@ import SnowboardHero from '../../components/games/SnowboardHero';
 import KnifeDart from '../../components/games/KnifeDart';
 import PunchBox from '../../components/games/PunchBox';
 import PopUp from '../../components/games/Popup';
+import LockMaster from '../../components/games/LockMaster';
 
 const Games = () => {
     const [game, setGame] = useState(null);
@@ -71,6 +72,14 @@ const Games = () => {
                                     <img src="/hoop.png" alt="" />
                                 </div>
                             </div>
+                            <div className={ games.card } onClick={() => { setGame('lock') }}>
+                                <h2>Lock Master</h2>
+                                <Link href='/'>Play</Link>
+                                <div className={ games.thumbnail }>
+                                    <span>PLAY</span>
+                                    <img src="/lock.png" alt="" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                     { game && (
@@ -81,6 +90,7 @@ const Games = () => {
                             { game == 'dart' && <KnifeDart />}
                             { game == 'punch' && <PunchBox /> }
                             { game == 'pop' && <PopUp /> }
+                            { game == 'lock' && <LockMaster /> }
                             <button onClick={() => { setGame('') }}>CLOSE</button>
                         </div>
                         )
