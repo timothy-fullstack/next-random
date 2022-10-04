@@ -45,7 +45,7 @@ export default function Home() {
           <div>
             { jokes == '' && <button onClick={ getJokes }>Up for a Joke?</button>}
           </div>
-          { jokes && <div className={ styles.advice } onClick={() => { setJokes('') }}><strong>{ jokes.joke }</strong> <img src="laugh.png" alt="" srcset="" /></div>}
+          <div className={ styles.advice + ` ${ jokes ? styles.bounce : "" }` } onClick={() => { setJokes('') }}><strong>{ jokes.joke }</strong> <img src="laugh.png" alt="" srcset="" /></div>
         </div>
       </section>
     </>
