@@ -15,7 +15,7 @@ const Navbar = () => {
                     <Link href='/leaderboards'>Leaderboards</Link>
                 </div>
             </div>
-            <Link href='/games'> </Link>
+            <Link href='/games/marioRun'> </Link>
         </nav>
     );
 }

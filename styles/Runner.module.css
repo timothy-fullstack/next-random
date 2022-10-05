@@ -1,0 +1,44 @@
+.canvas {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg {
+    position: relative;
+    width: 200%;
+    height: 50vh;
+    background-image: url('/bg.webp');
+    background-size: 40% 100%;
+    animation: endlessBg linear 3s infinite;
+}
+
+.bg img {
+    width: 60px;
+    position: absolute;
+    width: 70px;
+    left: 600px;
+    bottom: 64px;
+}
+
+.jumping {
+    transform: translateY(-70px);
+}
+
+.character {
+    position: absolute;
+    width: 70px;
+    left: 64px;
+    bottom: 64px;
+    transition: 300ms;
+}
+
+@keyframes endlessBg {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-40%);
+    }
+}
+

@@ -104,6 +104,16 @@ const Leaderboards = () => {
                                 </span>
                                 <h3>Adi</h3>
                             </div>
+                            <div className={ leaderboards.winner }>
+                                <div>
+                                    <img src="/lock.png" alt="" />
+                                </div>
+                                <span>
+                                    <p>October 4, 2022</p>
+                                    <h3>Lock Master</h3>
+                                </span>
+                                <h3>Crisbern</h3>
+                            </div>
                         </div>
                     </div>
                     <div className={ leaderboards.tile }>
@@ -112,7 +122,7 @@ const Leaderboards = () => {
                             <li>
                                 <img src="/user.png" alt="" />
                                 <span>Crisbern</span>
-                                <strong>4</strong>
+                                <strong>5</strong>
                             </li>
                             <li>
                                 <img src="/user.png" alt="" />
