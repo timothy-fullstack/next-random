@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { useState } from 'react';
 import runner from '../../styles/Runner.module.css'
 
-const marioRun = () => {
+const MarioRun = () => {
     const [jump, setJump] = useState(false);
     const [canJump, setCanJump] = useState(true);
 
@@ -35,4 +35,4 @@ const marioRun = () => {
     );
 }
  
-export default marioRun;
+export default MarioRun;
