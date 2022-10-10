@@ -2,8 +2,6 @@ import Link from "next/link";
 import { useState } from "react";
 
 const Navbar = () => {
-    const [jump, setJump] = useState(false);
-
     return (
         <nav>
             <div className="container navbar-container">
@@ -15,7 +13,7 @@ const Navbar = () => {
                     <Link href='/leaderboards'>Leaderboards</Link>
                 </div>
             </div>
-            <Link href='/games/marioRun'> </Link>
+            <Link href='/games/MarioRun'> </Link>
         </nav>
     );
 }

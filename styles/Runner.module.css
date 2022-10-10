@@ -21,7 +21,8 @@
 }
 
 .jumping {
-    transform: translateY(-70px);
+    transform: translateY(-80px);
+    transition-timing-function: ease-in-out;
 }
 
 .character {

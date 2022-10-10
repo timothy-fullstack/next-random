@@ -10,6 +10,9 @@ import PunchBox from '../../components/games/PunchBox';
 import PopUp from '../../components/games/Popup';
 import LockMaster from '../../components/games/LockMaster';
 import WorldJump from '../../components/games/WorldJump';
+import DinoRun from '../../components/games/DinoRun';
+import FlickBasketball from '../../components/games/FlickBasketball';
+import JumpSplat from '../../components/games/jumpSplat';
 
 const Games = () => {
     const [game, setGame] = useState(null);
@@ -89,6 +92,30 @@ const Games = () => {
                                     <img src="/world.png" alt="" />
                                 </div>
                             </div>
+                            <div className={ games.card } onClick={() => { setGame('dino') }}>
+                                <h2>Dinosaur Run</h2>
+                                <Link href='/'>Play</Link>
+                                <div className={ games.thumbnail }>
+                                    <span>PLAY</span>
+                                    <img src="/dino1.png" alt="" />
+                                </div>
+                            </div>
+                            <div className={ games.card } onClick={() => { setGame('ball') }}>
+                                <h2>Flick Basketball</h2>
+                                <Link href='/'>Play</Link>
+                                <div className={ games.thumbnail }>
+                                    <span>PLAY</span>
+                                    <img src="/ball.png" alt="" />
+                                </div>
+                            </div>
+                            <div className={ games.card } onClick={() => { setGame('splat') }}>
+                                <h2>Jump and Splat</h2>
+                                <Link href='/'>Play</Link>
+                                <div className={ games.thumbnail }>
+                                    <span>PLAY</span>
+                                    <img src="/bounce.png" alt="" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                     { game && (
@@ -101,6 +128,9 @@ const Games = () => {
                             { game == 'pop' && <PopUp /> }
                             { game == 'lock' && <LockMaster /> }
                             { game == 'jump' && <WorldJump /> }
+                            { game == 'dino' && <DinoRun /> }
+                            { game == 'ball' && <FlickBasketball /> }
+                            { game == 'splat' && <JumpSplat /> }
                             <button onClick={() => { setGame('') }}>CLOSE</button>
                         </div>
                         )
